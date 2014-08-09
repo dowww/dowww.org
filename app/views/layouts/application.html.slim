@@ -1,0 +1,18 @@
+doctype html
+html.no-js lang=I18n.locale
+  head
+    meta charset='utf-8'
+    meta http-equiv='X-UA-Compatible' content='IE=edge'
+
+    title dowww.org
+
+    meta name='description' content=''
+    meta name='keywords' content=''
+
+    = stylesheet_link_tag 'application'
+    = csrf_meta_tags
+
+  body
+    = yield
+
+    = javascript_include_tag 'application'
