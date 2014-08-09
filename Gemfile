@@ -17,4 +17,8 @@ group :development, :test do
   gem 'dotenv-rails', '~> 0.11.1'
 end
 
+group :production do
+  gem 'rails_12factor', '~> 0.0.2'
+end
+
 ruby '2.1.2'
