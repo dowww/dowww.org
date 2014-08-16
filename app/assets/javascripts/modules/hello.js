@@ -1,7 +1,7 @@
 define(function () {
   return {
     sayHello: function (from) {
-      console.log('Hello from ' + name + '!');
+      console.log('Hello from ' + from + '!');
     }
   }
 });
