@@ -1,0 +1,8 @@
+{
+  "name": "dowww.org",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.3"
+  }
+}
