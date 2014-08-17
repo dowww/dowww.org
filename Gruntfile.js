@@ -10,7 +10,11 @@ module.exports = function(grunt) {
       dist: {
         devFile: 'vendor/assets/components/modernizr/modernizr.js',
         outputFile: 'vendor/assets/javascripts/modernizr-custom.js',
-        parseFiles: false,
+        parseFiles: true,
+        files: {
+          src: ['app/assets/**/*.+(scss|css|js)']
+        },
+        uglify: false,
         extra: {
           mq: true
         },
