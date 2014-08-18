@@ -12,6 +12,11 @@ html.no-js lang=I18n.locale
     meta name='keywords' content=''
 
     = javascript_include_tag 'modernizr-custom'
+    javascript:
+      Modernizr.load({
+        test: Modernizr.mq('only all'),
+        nope: '#{javascript_path("respond")}'
+      });
 
     = stylesheet_link_tag 'application'
     = requirejs_include_tag 'application'
