@@ -1,0 +1,29 @@
+{
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "es3": true,
+  "forin": true,
+  "freeze": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonbsp": true,
+  "nonew": true,
+  "quotmark": true,
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "maxlen": 80,
+  "debug": true,
+  "browser": true,
+  "devel": true,
+  "globals": {
+    "require": false,
+    "define": false
+  }
+}

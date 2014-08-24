@@ -16,5 +16,9 @@
   },
   "railsViews": {
     "files": "app/views/**/*.+(slim|erb)"
+  },
+  "javascriptFiles": {
+    "files": "<%= jshint.all %>",
+    "tasks": "jshint"
   }
 }
