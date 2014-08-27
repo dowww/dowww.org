@@ -12,6 +12,8 @@ gem 'compass-rails', '~> 2.0.0'
 gem 'requirejs-rails', '~> 0.9.4'
 gem 'uglifier', '~> 2.5.3'
 
+gem 'rails-i18n', '~> 4.0.2'
+
 group :development do
   gem 'spring', '~> 1.1.3'
 end
