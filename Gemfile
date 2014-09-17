@@ -16,11 +16,13 @@ gem 'rails-i18n', '~> 4.0.2'
 
 group :development do
   gem 'spring', '~> 1.1.3'
+  gem 'spring-commands-rspec', '~> 1.0.2'
 end
 
 group :development, :test do
   gem 'dotenv-rails', '~> 0.11.1'
   gem 'thin', '~> 1.6.2'
+  gem 'rspec-rails', '~> 3.1.0'
 end
 
 group :production do
