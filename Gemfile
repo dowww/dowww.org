@@ -30,4 +30,4 @@ group :production do
   gem 'heroku-deflater', '~> 0.5.3'
 end
 
-ruby '2.1.2'
+ruby '2.1.3'
