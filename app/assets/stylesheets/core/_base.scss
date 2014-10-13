@@ -1,0 +1,31 @@
+/*
+ * Base elements styles (e.g.: Tags like body, p, a, etc.)
+ */
+
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+::selection { }
+
+::-moz-selection { }
+
+html {
+  font-size: $base-fontSize;
+}
+
+body {
+  color: $base-color;
+  font: {
+    family: $base-fontFamily;
+    size: 100%;
+    weight: 300;
+  };
+  line-height: $base-lineHeight;
+}
+
+p { }
+
+a { }

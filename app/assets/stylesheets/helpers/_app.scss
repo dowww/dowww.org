@@ -1,0 +1,16 @@
+/*
+ * Base helpers of CSS properties
+ */
+
+@mixin attention() {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin svg($path) {
+  background-image: image-url("svg/#{$path}.svg");
+  .no-svg & { background-image: image-url("#{$path}.png"); }
+}

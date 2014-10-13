@@ -7,8 +7,8 @@ gem 'pg', '~> 0.17.1'
 gem 'unicorn', '~> 4.8.3'
 
 gem 'slim-rails', '~> 2.1.5'
-gem 'sass-rails', '~> 4.0.3'
-gem 'compass-rails', '~> 2.0.0'
+gem 'sass', '~> 3.4.5'
+gem 'bourbon', '~> 4.0.2'
 gem 'requirejs-rails', '~> 0.9.4'
 gem 'uglifier', '~> 2.5.3'
 

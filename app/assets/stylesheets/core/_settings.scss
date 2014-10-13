@@ -1,0 +1,28 @@
+/*
+* Application wide variables
+*/
+
+// Colors
+
+$black: #000000;
+$white: #ffffff;
+
+$base-color: $black;
+$adjacent-color: $white;
+
+// Content
+
+$base-fontSize: 16px;
+$base-lineHeight: 24px;
+$base-trailer: $base-lineHeight;
+
+$base-fontFamily: sans-serif;
+
+// Layout
+
+$base-whitespace: 10px;
+$max-width: 1200px;
+
+// Grid
+
+$breakpoint-small: 480px;
