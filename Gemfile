@@ -1,5 +1,6 @@
-
 source 'https://rubygems.org'
+
+ruby '2.1.5'
 
 gem 'rails', '~> 4.1.4'
 
@@ -9,7 +10,7 @@ gem 'unicorn', '~> 4.8.3'
 
 gem 'slim-rails', '~> 2.1.5'
 gem 'sass-rails', '~> 4.0.3'
-gem 'bourbon', '3.2.3'
+gem 'bourbon', '~> 3.2.3'
 gem 'requirejs-rails', '~> 0.9.4'
 gem 'uglifier', '~> 2.5.3'
 
@@ -30,5 +31,3 @@ group :production do
   gem 'rails_12factor', '~> 0.0.2'
   gem 'heroku-deflater', '~> 0.5.3'
 end
-
-ruby '2.1.3'
