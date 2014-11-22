@@ -1,5 +1,5 @@
 /* Modernizr (Custom Build) | MIT & BSD
- * Build: http://modernizr.com/download/#-mq-shiv-load-cssclasses-prefixed
+ * Build: http://modernizr.com/download/#-mq-shiv-load-cssclasses-prefixed-svg
  */
 ;
 
@@ -28,6 +28,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
     domPrefixes = omPrefixes.toLowerCase().split(' '),
 
+    ns = {'svg': 'http://www.w3.org/2000/svg'},
 
     tests = {},
     inputs = {},
@@ -208,7 +209,10 @@ window.Modernizr = (function( window, document, undefined ) {
           props = (prop + ' ' + (domPrefixes).join(ucProp + ' ') + ucProp).split(' ');
           return testDOMProps(props, prefixed, elem);
         }
-    }    for ( var feature in tests ) {
+    }    tests['svg'] = function() {
+        return !!document.createElementNS && !!document.createElementNS(ns.svg, 'svg').createSVGRect;
+    };
+    for ( var feature in tests ) {
         if ( hasOwnProp(tests, feature) ) {
                                     featureName  = feature.toLowerCase();
             Modernizr[featureName] = tests[feature]();
