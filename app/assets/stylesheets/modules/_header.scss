@@ -14,8 +14,7 @@
 	position: fixed;
 	top: 0;
 
-	width: 100%;
-	height: $size;
+	@include size(100% $size);
 	margin: 0;
 
 	background-color: $css3-color;
@@ -28,8 +27,7 @@
 		position: absolute;
 		top: 0;
 
-		width: 33%;
-		height: $size;
+		@include size(33% $size);
 	}
 
 	&:before {
