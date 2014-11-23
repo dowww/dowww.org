@@ -1,0 +1,50 @@
+/*
+ * Main header of application.
+ */
+
+// .module
+
+// .sub-module
+
+.line-top {
+	$size: 6px;
+
+	@include clearfix;
+
+	position: fixed;
+	top: 0;
+
+	width: 100%;
+	height: $size;
+	margin: 0;
+
+	background-color: $css3-color;
+	border: 0;
+
+	&:before,
+	&:after {
+		content: '';
+
+		position: absolute;
+		top: 0;
+
+		width: 33%;
+		height: $size;
+	}
+
+	&:before {
+		left: 0;
+
+		background-color: $html5-color;
+	}
+
+	&:after {
+		right: 0;
+
+		background-color: $js-color;
+	}
+}
+
+// .is-state
+
+// .module--modifiers
