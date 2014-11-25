@@ -19,11 +19,15 @@ $js-shade: #b0a13a;
 
 // Content
 
+$serif: 'PT Serif', serif;
+$sans-serif: 'Istok Web', sans-serif;
+
 $base-fontSize: 16px;
 $base-lineHeight: 24px;
 $base-trailer: $base-lineHeight;
 
-$base-fontFamily: sans-serif;
+$base-fontFamily: $serif;
+$base-fontHeading: $sans-serif;
 
 // Layout
 
