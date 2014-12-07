@@ -1,0 +1,97 @@
+/*
+ * Main sidebar of adminstrative.
+ */
+
+.admin-sidebar {
+  @include position(fixed, 0px null null 0px);
+  z-index: 0;
+
+  width: em(240px);
+  min-height: 100%;
+  overflow: hidden;
+  background-color: $admin-base;
+
+  color: $admin-adjacentB;
+  font-family: $sans-serif;
+
+  @include transition(width 500ms ease-in-out);
+}
+
+  .admin-profile {
+    width: 100%;
+    height: $admin-header-row;
+    padding: $base-trailer;
+    background-color: $admin-adjacent;
+
+    color: $admin-adjacentB;
+    text-align: center;
+
+    .admin-profile-picture {
+      $size: 46px;
+
+      float: left;
+
+      display: block;
+      @include size($size);
+      margin: 0 auto;
+
+      border-radius: 50%;
+    }
+
+    .admin-profile-name {
+      margin-bottom: 0;
+
+      color: $admin-adjacentB;
+      font-size: em($base-fontSize);
+      line-height: em($base-lineHeight);
+    }
+  }
+
+  .admin-navbar {}
+
+    .admin-navbar-list {
+      margin: {
+        top: 0;
+        bottom: 0;
+      };
+      padding-left: 0;
+
+      list-style-type: none;
+
+      .admin-navbar-item {
+
+        .admin-navbar-link,
+        .admin-navbar-logout {
+          display: block;
+          width: 100%;
+          padding-left: em($base-trailer / 2);
+
+          color: $admin-adjacentB;
+          font-weight: $weight-bold;
+          letter-spacing: .3px;
+          line-height: em($base-lineHeight * 2);
+          text: {
+            decoration: none;
+            transform: uppercase;
+          };
+
+          @include transition(background-color 400ms ease-in-out);
+
+          @include attention() {
+            $hover-color: darken($admin-base, 5%);
+            background-color: $hover-color;
+          }
+
+          .fa {
+            margin-right: em($base-whitespace);
+          }
+        }
+
+        .admin-navbar-logout {
+          text-align: left;
+
+          background-color: transparent;
+          border: 0;
+        }
+      }
+    }

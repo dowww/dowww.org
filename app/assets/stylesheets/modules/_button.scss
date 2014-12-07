@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  padding: {
+    left: em($base-whitespace);
+    right: em($base-whitespace);
+  };
+
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 4px;
+
+  font-family: $sans-serif;
+  font-weight: $weight-bold;
+  line-height: em(34px);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+  .button--primary {
+    $shade-color: darken($admin-adjacent, 10%);
+
+    background-color: $admin-adjacent;
+    border-color: $shade-color;
+
+    color: $white;
+
+    @include transition(background-color 300ms ease-in-out);
+
+    @include attention() {
+      background-color: $shade-color;
+    }
+  }
+
+  .button--right {
+    float: right;
+  }

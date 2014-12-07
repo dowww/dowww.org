@@ -1,0 +1,34 @@
+/*
+ * Main header of adminstrative.
+ */
+
+.admin-header {
+  z-index: 1;
+
+  width: 100%;
+  height: $admin-header-row + 2px;
+  padding:  {
+    top: em($base-trailer + 8px);
+    left: em(240px + $base-trailer);
+    right: em($base-trailer);
+    bottom: em($base-trailer);
+  }
+
+  background-color: $white;
+  border-bottom: 2px solid $grayB;
+
+  .admin-header-title {
+    display: inline-block;
+    margin-top: 0;
+
+    font-weight: $weight-normal;
+  }
+
+  .button {
+    display: none;
+
+    @include respond-to(em($breakpoint-smallB)) {
+      display: block;
+    }
+  }
+}

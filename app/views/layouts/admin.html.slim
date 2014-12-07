@@ -12,6 +12,7 @@ html.no-js lang=I18n.locale
     meta name='keywords' content=''
 
     link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Istok+Web:400,400italic,700' rel='stylesheet' type='text/css'
+    link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'
 
     = javascript_include_tag 'modernizr-custom'
     javascript:
@@ -24,4 +25,6 @@ html.no-js lang=I18n.locale
     = csrf_meta_tags
 
   body
+    = render 'admin/shared/header'
+    = render 'admin/shared/sidebar'
     = yield

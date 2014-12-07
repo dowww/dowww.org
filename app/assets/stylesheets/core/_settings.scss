@@ -6,9 +6,8 @@
 
 $black: #000000;
 $white: #ffffff;
-
-$base-color: $black;
-$adjacent-color: $white;
+$gray: #f6f6f6;
+$grayB: #dddddd;
 
 $css3-color: #2baae1;
 $css3-shade: #207aa2;
@@ -17,7 +16,17 @@ $html5-shade: #ad4a1f;
 $js-color: #f0db4e;
 $js-shade: #b0a13a;
 
+$base-color: $black;
+$adjacent-color: $white;
+
+$admin-adjacent: #9b59b6;
+$admin-adjacentB: $white;
+$admin-base: #34495e;
+
 // Content
+
+$weight-normal: 400;
+$weight-bold: 700;
 
 $serif: 'PT Serif', serif;
 $sans-serif: 'Istok Web', sans-serif;
@@ -29,11 +38,16 @@ $base-trailer: $base-lineHeight;
 $base-fontFamily: $serif;
 $base-fontHeading: $sans-serif;
 
+$em-base: 16px;
+
 // Layout
 
 $base-whitespace: 10px;
 $max-width: 1200px;
 
+$admin-header-row: 102px;
+
 // Grid
 
 $breakpoint-small: 480px;
+$breakpoint-smallB: 620px;

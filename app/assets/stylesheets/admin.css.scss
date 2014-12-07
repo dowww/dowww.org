@@ -1,1 +1,29 @@
 //= require normalize-css
+
+@import "bourbon";
+
+/*
+* Main application file of administrative, import partials
+*/
+
+// Helpers
+
+@import "helpers/app";
+@import "helpers/debug";
+@import "helpers/rwd";
+
+// Core
+
+@import "core/settings";
+@import "core/base";
+
+// Content
+
+@import "content/headings";
+
+// Modules
+
+@import "modules/admin/header";
+@import "modules/admin/sidebar";
+@import "modules/button";
+

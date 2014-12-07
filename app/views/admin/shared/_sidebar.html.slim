@@ -1,0 +1,28 @@
+aside.admin-sidebar#admin-sidebar
+  header.admin-profile
+    = image_tag 'profile.jpeg', alt: 'Profile picture of user', class: 'admin-profile-picture'
+    h1.admin-profile-name @username
+  nav.admin-navbar role='navigation'
+    ul.admin-navbar-list role='menu'
+      li.admin-navbar-item
+        = link_to admin_root_path, title: 'Dashboard', class: 'admin-navbar-link' do
+          span.fa.fa-tachometer
+          | Dashboard
+      li.admin-navbar-item
+        = link_to '#', title: 'Write a post', class: 'admin-navbar-link' do
+          span.fa.fa-pencil
+          | Write a post
+      li.admin-navbar-item
+        = link_to '#', title: 'Post list', class: 'admin-navbar-link' do
+          span.fa.fa-th-list
+          | Posts
+      li.admin-navbar-item
+        = link_to '#', title: 'Edit profile form', class: 'admin-navbar-link' do
+          span.fa.fa-gear
+          | Edit profile
+      li.admin-navbar-item
+        form
+          button.admin-navbar-logout
+            span.fa.fa-power-off
+            | Logout
+
