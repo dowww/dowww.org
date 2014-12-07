@@ -11,7 +11,7 @@
   overflow: hidden;
   background-color: $admin-base;
 
-  color: $admin-adjacentB;
+  color: $admin-baseB;
   font-family: $sans-serif;
 
   @include transition(width 500ms ease-in-out);
@@ -66,7 +66,7 @@
           width: 100%;
           padding-left: em($base-trailer / 2);
 
-          color: $admin-adjacentB;
+          color: $admin-baseB;
           font-weight: $weight-bold;
           letter-spacing: .3px;
           line-height: em($base-lineHeight * 2);
@@ -75,15 +75,13 @@
             transform: uppercase;
           };
 
-          @include transition(background-color 400ms ease-in-out);
+          @include transition(all 400ms ease-in-out);
 
           @include attention() {
             $hover-color: darken($admin-base, 5%);
             background-color: $hover-color;
-          }
 
-          .fa {
-            margin-right: em($base-whitespace);
+            color: $admin-adjacentB;
           }
         }
 

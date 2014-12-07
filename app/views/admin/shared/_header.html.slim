@@ -1,4 +1,6 @@
 header.admin-header role='banner'
   /a.toogle href='#admin-sidebar' Toogle
   h1.admin-header-title Dashboard
-  = link_to 'New post', '#', title: 'Write a new post', class: 'button button--primary button--right', role: 'button'
+  = link_to '#', title: 'Write a new post', class: 'button button--primary button--right', role: 'button' do
+    span.fa.fa-plus
+    | New post
