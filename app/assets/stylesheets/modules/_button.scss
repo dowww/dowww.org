@@ -36,6 +36,8 @@
 
     @include attention() {
       background-color: $shade-color;
+
+      color: $white;
     }
   }
 

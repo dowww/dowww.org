@@ -7,7 +7,7 @@ h4, h5, h6 {
   color: $base-color;
   font: {
     family: $base-fontHeading;
-    weight: bold;
+    weight: $weight-normal;
   }
 }
 

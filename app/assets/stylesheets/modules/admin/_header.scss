@@ -7,15 +7,14 @@
 
   width: 100%;
   height: $admin-header-row + 2px;
+  margin-bottom: em($base-trailer);
   padding:  {
     top: em($base-trailer + 8px);
     left: em(240px + $base-trailer);
     right: em($base-trailer);
     bottom: em($base-trailer);
   }
-
-  background-color: $white;
-  border-bottom: 2px solid $grayB;
+  border-radius: 0;
 
   .admin-header-title {
     display: inline-block;

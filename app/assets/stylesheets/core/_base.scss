@@ -30,7 +30,14 @@ body {
 
 p { }
 
-a { }
+a {
+  text-decoration: none;
+  color: $css3-color;
+
+  @include attention() {
+    color: $css3-shade;
+  }
+}
 
 .fa {
   margin-right: em($base-whitespace);
